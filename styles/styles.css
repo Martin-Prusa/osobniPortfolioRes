@@ -96,6 +96,10 @@ nav a:hover{
     color: #e2e2e2;
 }
 
+#ac {
+    color: red;
+}
+
 @media screen and (max-width: 800px) {
     #normal {
         display: none;
