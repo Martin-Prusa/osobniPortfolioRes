@@ -3,8 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Martin Průša</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+          integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+          crossorigin="anonymous"/>
 </head>
 <body>
+<nav id="normal">
+    <span><h1>Martin Průša</h1></span>
+    <span>
+        <ul>
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="about">O mně</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="gallery.html">Galerie</a></li>
+        </ul>
+    </span>
+</nav>
 
+
+<nav id="mobile">
+    <span><h1>Martin Průša</h1></span>
+    <span>
+        <label for="check">
+            <input type="checkbox" id="check">
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="about">O mně</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+            </ul>
+            <i id="showList" class="fas fa-stream"></i>
+
+        </label>
+    </span>
+</nav>
 </body>
 </html>
