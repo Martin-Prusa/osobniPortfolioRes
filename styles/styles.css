@@ -11,6 +11,7 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+/*------------------------------Navigace-------------------------------*/
 nav {
     color: white;
     background-color: #363636;
@@ -49,7 +50,7 @@ nav a {
     text-decoration: none;
 }
 
-#mobile{
+#mobile {
     display: none;
 }
 
@@ -60,6 +61,11 @@ nav a {
 #showList {
     font-size: 25px;
     cursor: pointer;
+    transition: 500ms;
+}
+
+#showList:hover {
+    color: #4285F4;
 }
 
 #mobile input {
@@ -92,14 +98,120 @@ nav a {
     font-weight: lighter;
 }
 
-nav a:hover{
-    color: #e2e2e2;
+nav a {
+    transition: 500ms;
 }
 
-#ac {
-    color: red;
+nav a:hover {
+    color: #4285F4;
 }
 
+.ac {
+    color: grey;
+}
+
+.ac:hover {
+    color: grey;
+    cursor: not-allowed;
+}
+
+/*------------------------------Kontakt-------------------------------*/
+#kontakt {
+    background-color: #d7d7d7;
+}
+
+.obsah {
+    width: 100%;
+    height: calc(100vh - 75px);
+}
+
+.con-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#kontakt form {
+    border: 3px solid black;
+    border-radius: 50px;
+    width: 80vw;
+    max-width: 800px;
+    height: 500px;
+    transition: 500ms;
+}
+
+.con-container h2 {
+    text-align: center;
+}
+
+.tof {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.in label {
+    display: inline-block;
+    width: 70px;
+    margin-left: 30px;
+}
+
+.in input {
+    width: 200px;
+    height: 20px;
+    padding: 3px;
+    margin: 10px;
+    border: none;
+}
+
+.in textarea {
+    width: 350px;
+    padding: 3px;
+    margin: 10px;
+    resize: none;
+    height: 100px;
+    border: none;
+}
+
+.in input:focus {
+    outline: 2px solid #4285F4;
+    color: #4285F4;
+}
+
+.in input:focus::placeholder{
+    color: #72a4fd;
+}
+
+.in textarea:focus{
+    outline: 2px solid #4285F4;
+    color: #4285F4;
+}
+
+.in textarea:focus::placeholder{
+    color: #72a4fd;
+}
+
+
+.con-container button {
+    width: 200px;
+    height: 30px;
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 115px;
+}
+
+.con-container button:active {
+    transform: scale(.95);
+}
+
+
+
+
+/*------------------------------Mobil-------------------------------*/
 @media screen and (max-width: 800px) {
     #normal {
         display: none;
@@ -107,5 +219,13 @@ nav a:hover{
 
     #mobile {
         display: flex;
+    }
+
+    .in textarea {
+        width: 200px;
+        padding: 3px;
+        margin: 10px;
+        resize: none;
+        height: 100px;
     }
 }

@@ -8,14 +8,14 @@
           integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
           crossorigin="anonymous"/>
 </head>
-<body>
+<body id="kontakt">
 <nav id="normal">
     <span><h1>Martin Průša</h1></span>
     <span>
         <ul>
             <li><a href="index.html">Domů</a></li>
             <li><a href="about.html">O mně</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="contact.html" class="ac">Kontakt</a></li>
             <li><a href="gallery.html">Galerie</a></li>
         </ul>
     </span>
@@ -30,7 +30,7 @@
             <ul>
                 <li><a href="index.html">Domů</a></li>
                 <li><a href="about.html">O mně</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="contact.html" class="ac">Kontakt</a></li>
                 <li><a href="gallery.html">Galerie</a></li>
             </ul>
             <i id="showList" class="fas fa-stream"></i>
@@ -38,5 +38,32 @@
         </label>
     </span>
 </nav>
+
+
+<div class="obsah">
+    <div class="con-container">
+        <form>
+            <h2>Kontaktujte mě</h2>
+            <div class="tof">
+                <div>
+                    <div class="in">
+                        <label for="email">Email </label>
+                        <input type="email" id="email" required placeholder="martin.prusa@example.com">
+                    </div>
+                    <div class="in">
+                        <label for="name">Jméno </label>
+                        <input type="text" id="name" required placeholder="Martin Průša">
+                    </div>
+                    <div class="in">
+                        <label for="textA">Zpráva </label>
+                        <textarea id="textA" required placeholder="Dobrý den ..."></textarea>
+                    </div>
+                    <button>Odeslat</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
 </body>
 </html>
