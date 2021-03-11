@@ -246,6 +246,10 @@ body {
     font-size: 30px;
 }
 
+.mobile-container {
+    display: none;
+}
+
 /*------------------------------Mobil-------------------------------*/
 @media screen and (max-width: 800px) {
     #normal {
@@ -276,6 +280,21 @@ body {
 @media screen and (max-width: 1300px){
     .container {
         display: none;
+    }
+
+    .gallery {
+        display: block;
+    }
+
+    .mobile-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-container img {
+        max-width: 600px;
+        margin: 20px;
     }
 
 }
