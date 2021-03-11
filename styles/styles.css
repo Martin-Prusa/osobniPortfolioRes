@@ -115,6 +115,10 @@ nav a:hover {
     cursor: not-allowed;
 }
 
+body {
+    background-color: #d7d7d7;
+}
+
 /*------------------------------Kontakt-------------------------------*/
 #kontakt {
     background-color: #d7d7d7;
@@ -122,14 +126,13 @@ nav a:hover {
 
 .obsah {
     width: 100%;
-    height: calc(100vh - 75px);
+    height: calc(100vh - 145px);
 }
 
 .con-container {
     display: flex;
-    align-items: center;
+    margin-top: 70px;
     justify-content: center;
-    height: 100%;
 }
 
 #kontakt form {
@@ -158,7 +161,7 @@ nav a:hover {
 }
 
 .in input {
-    width: 200px;
+    width: 350px;
     height: 20px;
     padding: 3px;
     margin: 10px;
@@ -194,7 +197,7 @@ nav a:hover {
 
 
 .con-container button {
-    width: 200px;
+    width: 350px;
     height: 30px;
     background-color: #4285F4;
     color: white;
@@ -208,8 +211,55 @@ nav a:hover {
     transform: scale(.95);
 }
 
+/*------------------------------Galerie----------------------------*/
 
+.container {
+    display: flex;
+    width: 80vw;
+}
 
+.fotka {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.fotka h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.fotka:hover {
+    flex: 1.5;
+}
+
+.fotka:hover h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.podnadpis {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 30px;
+}
 
 /*------------------------------Mobil-------------------------------*/
 @media screen and (max-width: 800px) {
@@ -227,5 +277,19 @@ nav a:hover {
         margin: 10px;
         resize: none;
         height: 100px;
+    }
+
+    .in input {
+        width: 200px;
+    }
+
+    .con-container button {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .gallery {
+        display: none;
     }
 }
