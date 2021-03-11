@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 html {
     margin: 0;
@@ -8,7 +8,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: Roboto, sans-serif;
+    font-family: Ubuntu, sans-serif;
 }
 
 /*------------------------------Navigace-------------------------------*/
@@ -249,6 +249,85 @@ body {
 .mobile-container {
     display: none;
 }
+
+/*------------------------------About--------------------*/
+
+.icn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    margin: 40px auto;
+    color: #363636;
+    border: 5px solid #363636;
+    border-radius: 60px;
+    transition: 500ms;
+}
+
+.icn:hover {
+    color: #4285F4;
+    border-color: #4285F4;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.about p {
+    text-align: justify;
+    margin: 0 auto;
+    width: 70vw;
+    line-height: 1.5;
+}
+
+/*soc cont sit*/
+
+.soc {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto 0;
+}
+
+.soc h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sit i {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color: #363636;
+    transition: 500ms;
+}
+
+.sit {
+    text-align: center;
+    color: #646464;
+    width: 120px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.sit:hover {
+    color: #72a4fd;
+}
+
+.sit:hover i {
+    color: #4285F4;
+}
+
+
 
 /*------------------------------Mobil-------------------------------*/
 @media screen and (max-width: 800px) {
