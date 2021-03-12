@@ -327,6 +327,90 @@ body {
     color: #4285F4;
 }
 
+/*-----------------------------Index--------------------------------*/
+.containerName {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.nadpis{
+    font-size: 40px;
+    font-weight: bolder;
+    display: inline-flex;
+    font-style: italic;
+    border: 3px solid #363636;
+    padding: 20px 30px;
+    border-radius: 200px;
+    background-color: #585858;
+}
+
+.nadpis span {
+    color: #d7d7d7;
+    transition: color 500ms;
+}
+
+.nadpis span:hover {
+    color: #4285F4;
+}
+
+.nadpis div {
+    width: 130px;
+}
+
+.nadpis .prijmeni {
+    margin-top: 30px;
+}
+
+
+.odkazy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.odkazy .odkaz {
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 250px;
+    background-color: #585858;
+    border: 3px solid #363636;
+    padding: 20px;
+    transition: 500ms;
+}
+
+
+.odkazy .odkaz .i {
+    display: inline-block;
+    font-size: 50px;
+}
+
+.odkazy .odkaz .kam {
+    font-size: 50px;
+    margin: 0 10px;
+}
+
+.odkazy .odkaz .info{
+    display: block;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.odkazy .odkaz a {
+    text-decoration: none;
+    color: #d7d7d7;
+}
+
+.odkazy .odkaz:hover {
+    border: 3px solid #2a71ef;
+    background-color: #4285F4;
+}
 
 
 /*------------------------------Mobil-------------------------------*/
@@ -356,7 +440,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1400px){
     .container {
         display: none;
     }
@@ -374,6 +458,10 @@ body {
     .mobile-container img {
         max-width: 600px;
         margin: 20px;
+    }
+
+    .odkazy {
+        flex-direction: column;
     }
 
 }
