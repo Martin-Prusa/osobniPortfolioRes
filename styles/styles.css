@@ -120,95 +120,98 @@ body {
 }
 
 /*------------------------------Kontakt-------------------------------*/
-#kontakt {
-    background-color: #d7d7d7;
-}
-
-.obsah {
-    width: 100%;
-    height: calc(100vh - 145px);
-}
-
-.con-container {
+.container-a {
     display: flex;
-    margin-top: 70px;
     justify-content: center;
 }
 
-#kontakt form {
-    border: 3px solid black;
-    border-radius: 50px;
-    width: 80vw;
-    max-width: 800px;
-    height: 500px;
-    transition: 500ms;
+.contact-container {
+    margin: 70px;
+    width: 600px;
+    box-shadow: 1px 4px 21px 7px rgba(54, 54, 54, 0.65);
 }
 
-.con-container h2 {
-    text-align: center;
-}
-
-.tof {
+.top {
+    background-color: #363636;
+    color: white;
+    height: 100px;
+    width: 100%;
     display: flex;
     align-items: center;
-    margin-left: 10%;
+}
+
+.bottom {
+    background-color: white;
+    width: 100%;
+    height: 400px;
+}
+
+.top h2 {
+    margin-left: 20px;
+}
+
+.in {
+    width: 450px;
+    height: 30px;
+    padding-top: 40px;
+    padding-left: 40px;
 }
 
 .in label {
-    display: inline-block;
     width: 70px;
-    margin-left: 30px;
+    display: inline-block;
 }
 
 .in input {
-    width: 350px;
+    width: 200px;
     height: 20px;
     padding: 3px;
-    margin: 10px;
-    border: none;
-}
-
-.in textarea {
-    width: 350px;
-    padding: 3px;
-    margin: 10px;
-    resize: none;
-    height: 100px;
-    border: none;
+    border: 1px solid #363636;
+    outline: none;
 }
 
 .in input:focus {
     outline: 2px solid #4285F4;
-    color: #4285F4;
 }
 
-.in input:focus::placeholder{
-    color: #72a4fd;
+.in textarea {
+    width: 300px;
+    padding: 3px;
+    margin: 10px;
+    resize: none;
+    height: 80px;
+    border: 1px solid #363636;
+    outline: none;
 }
 
-.in textarea:focus{
+.in textarea:focus {
     outline: 2px solid #4285F4;
-    color: #4285F4;
 }
 
-.in textarea:focus::placeholder{
-    color: #72a4fd;
+#zp {
+    width: 60px;
 }
 
-
-.con-container button {
-    width: 350px;
-    height: 30px;
-    background-color: #4285F4;
+#btn {
+    margin-left: 34%;
+    margin-top: 20%;
     color: white;
+    background-color: #363636;
     border: none;
     outline: none;
+    width: 200px;
+    height: 35px;
     cursor: pointer;
-    margin-left: 115px;
+    font-size: 1.2rem;
+    transition:  500ms;
 }
 
-.con-container button:active {
+#btn:active {
     transform: scale(.95);
+}
+
+#btn:hover {
+    background-color: #4285F4;
 }
 
 /*------------------------------Galerie----------------------------*/
@@ -336,18 +339,18 @@ body {
 }
 
 .nadpis{
-    font-size: 40px;
+    font-size: 70px;
     font-weight: bolder;
     display: inline-flex;
     font-style: italic;
-    border: 3px solid #363636;
+    /*border: 3px solid #363636;*/
     padding: 20px 30px;
     border-radius: 200px;
-    background-color: #585858;
+    /*background-color: #585858;*/
 }
 
 .nadpis span {
-    color: #d7d7d7;
+    color: black;
     transition: color 500ms;
 }
 
@@ -360,7 +363,7 @@ body {
 }
 
 .nadpis .prijmeni {
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 
@@ -379,7 +382,6 @@ body {
     margin-left: 40px;
     margin-right: 40px;
     height: 250px;
-    background-color: #585858;
     border: 3px solid #363636;
     padding: 20px;
     transition: 500ms;
@@ -404,7 +406,7 @@ body {
 
 .odkazy .odkaz a {
     text-decoration: none;
-    color: #d7d7d7;
+    color: #363636;
 }
 
 .odkazy .odkaz:hover {
@@ -412,6 +414,9 @@ body {
     background-color: #4285F4;
 }
 
+.odkazy .odkaz:hover a {
+    color: white;
+}
 
 /*------------------------------Mobil-------------------------------*/
 @media screen and (max-width: 800px) {
