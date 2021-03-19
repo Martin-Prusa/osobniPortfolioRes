@@ -138,6 +138,11 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
+    transition: 500ms;
+}
+
+.top:hover {
+    background-color: #4285F4;
 }
 
 .bottom {
@@ -272,6 +277,10 @@ body {
 .icn:hover {
     color: #4285F4;
     border-color: #4285F4;
+}
+
+.about p{
+    max-width: 1500px;
 }
 
 .about h2 {
